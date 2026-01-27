@@ -1,0 +1,32 @@
+mkdir test
+
+
+###bash scripting
+		make an .sh file --->  -eg. - script1.sh
+
+
+##inside vim in the .sh file
+
+:!<command> <filename> --> run terminal inside vim     --> eg. -> :!bash script1.sh
+																{Note- check what * on the filepath means}
+/usr/bin/env bash --> go to the file path and define bash there (shabang?????)
+
+now you can do ./script1.sh to run the file
+
+terminal:	./script1.sh
+		bash: ./script1.sh: Permission denied
+
+		ls -lh script1.sh 
+		-rw-r--r-- 1 shailendra.pratapsingh bsmsstudents 91 Jan 13 12:45 script1.sh
+WE don't have executable perm
+so to get the perm, we do
+	chmod u+x <filename>										{check why does u and o are reversed, u for owner and o for users}
+
+ ssh means ---> Secure SHell
+
+####CHECK SERVER SHETUP (SSH)
+
+in dsp we are not using ssh, we are using LDAP (wth is ldap??)
+
+What is asymetric encryption
+	Public key and Private key
