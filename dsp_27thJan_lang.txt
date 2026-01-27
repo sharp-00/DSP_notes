@@ -1,0 +1,11 @@
+
+
+		Humans Think     --> declarative
+		Mimics Hardware? -->  state-oriented
+				 -->  state-change
+						--> C, Python
+Difference between python and C from the execution poiont of view -- look up
+
+Interpretation and Compilation
+
+
