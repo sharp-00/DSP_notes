@@ -1,0 +1,39 @@
+##Github --
+
+Local and remote repo
+origin
+
+cloning a repo 
+git clone <repo-url>
+	-copies full history
+	-
+
+git push   -->  publish local commits (make it remote) 
+git pull   -->  fetch + merge
+
+why pull? 
+	code review, asking someone to review????
+	look up
+
+
+git clone url
+	-if the repo is public, you can directly clone 
+	-if its private then it will ask for username and password
+	-here the password is a token, can generate a token from the github account.
+	-can use that token to clone the repo
+
+.gitconfig 
+	-now to save the credentials, you can just edit the .gitconfig file
+	-vim .gitconfig
+	-add this
+		[credential]
+			helper=store
+
+so, we did git push 
+can upload the whole local repo by
+	- create an empty repo on github and copy its link
+	- git init in the local folder
+	- git remote <link>
+	- git push
+
+
