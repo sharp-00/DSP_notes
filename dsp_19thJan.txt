@@ -1,0 +1,88 @@
+
+What happens when you try touch on a already existing file --> nothing happens (Check again)
+
+###Version Control and Collab
+
+What are patches?? --> recreate files using differences in the versions --> file which tells you the delta? 
+
+##Local version control system??
+
+Base version --> + delta1 + delta2
+can also go back, recent file --> keep applying delta to go back
+
+IS THIS GIT??
+
+##Centralized version control (eg. --> SVN)
+
+Shared repo
+	Developer will checkout the repo and then check in, server records the edits and others developers can check and edit things accordingly.
+
+	But what if two developers work on the same file(and version)???
+	solution??
+	Branching is expensive
+Problematic soooo
+
+Distributed version control --> Git 
+	All the developers are also in contact directly (not through server computer only)
+	each developer has all the info locally
+	Every clone has full history
+	Commits are local, so fast
+	Nothing like centralized server
+	Branching is cheaper
+
+Git stores snapshots, not diffs(no patchwork)
+No extra space required for the unmodified file --> how?
+History is not linear
+
+
+##Git
+
+	git config --global user.name "Shailendra"
+	git config --global user.email shailendra.pratapsingh@students.iiserpune.ac.in
+ --> creates .gitconfig file
+
+git init creates a .git directory --> this is the working directory for my git
+					repo is also inside this
+
+	-in the folder in which we used git init make a different file
+	-then add some content --> check git status
+	-add that file to git
+	-git add filename
+
+	- git commit -m"message" --> message for users
+
+	-after modifying the file, you have to stage this file(git add again) and then only commit
+	use git log to see the changes
+	use git status to check the status of the file
+
+	check git diff and git diff --staged --> shows the difference that we made(modifications)
+	git add -p
+	
+	.gitignore *.log --> this will ignore the .log files to be added
+	git rm [--cached] file
+	git mv old new
+
+
+
+####20thJan
+
+Undoing - 
+	git commit -m 'Initial commit'
+	git add forgotten_file
+	git commit --ammend
+
+git restore --staged file #for unstaging
+
+git restore file # to discard changes
+
+
+SKIPPED SOME PART
+
+
+
+
+git branch branchname
+git checkout branchname  --> to switch branches
+
+
+
