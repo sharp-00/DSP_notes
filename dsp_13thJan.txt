@@ -30,3 +30,5 @@ in dsp we are not using ssh, we are using LDAP (wth is ldap??)
 
 What is asymetric encryption
 	Public key and Private key
+
+..
