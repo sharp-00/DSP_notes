@@ -9,3 +9,115 @@ Difference between python and C from the execution poiont of view -- look up
 Interpretation and Compilation
 
 
+28-01-26
+
+
+Python Data Types
+
+- Python is dynamically typed language
+	-Types are associated with values(objects), not with variable names
+	-
+
+Every value in python is an object
+	each object has:
+		type
+		value
+		Identity(address, memory utilization)
+		Scope
+		Life
+
+Numerical Data types
+		- int(integer), float(floating-point numbers) and complex(a+bj)
+
+	x=10, some memory is allocated to 10 and x is pointing towards that memory
+and when x = x + 1
+	This takes x and adds 1 to it and now this has a new memory, with 11 in it.
+				(When does it replace?????) --- CHECK
+If there is no pointer toward it then that is garbage.
+
+bool just has True or False.
+	bool is a subset of int.
+
+Sequence data types 
+	Ordered collections of elements	- str(Immutable sequence of characters) --> eg. s ="hello"
+					  list(mutable sequence) --> eg. a = [1,2,3]
+					  tuple(immutable sequence) --> eg. t = (1,2,3)
+					  range(arithmetic progression) 
+
+
+
+Sets
+	mutable, frozenset - immutable
+	unordered, no duplicate elements
+	
+	Set Operations
+		- a & b # intersection
+		- a | b # union
+		- a - b # difference (asymmetric)
+
+	for symmetric - (a-b) | (b-a)
+
+Dictionaries
+	-mapping from keys to values
+	-keys must be immutable
+	-Fast lookup by key
+	eg, --> counts= {1:3, 4:6}
+
+	keys(), values(), items()  
+
+[Note:	NumPy arrays replace lists of numbers]
+
+BInary Data types 
+	- bytes(immutable sequence of bytes), 
+	- bytearray(mutable sequence of bytes),
+	- memoryview(zero-copy data access) --> LOOKUP
+
+Special Data type
+	-NONE
+
+User defined Data types
+	- combine data and behaviour
+	basis of object-oriented programming in python
+
+	eg. --> 
+		class Point:
+
+Control Flow:
+	if, elif, else
+
+	Loops
+		- for, while
+			break, continue
+
+Counters
+	tracks frequency or occurences
+	counts[i]
+
+Accumulators
+	combine values across iterations
+
+Aggregators
+	min, max, and one more --> LOOKUP
+
+
+Functions
+	-
+	- Default agruments -
+		parameters can have default values
+		Defaults are used when arguments are omitted
+		
+		PRoblmatic --> Default values are evaluted once
+				Avoid mutable defaults(lists, dicts)
+				solved using a different pattern
+				using None
+				then it can be appended
+
+
+Python tests
+	cd /nfscommon/common/kalpesh.kapoor
+	var.py, default_try.py(has two codes, check both of them)
+
+Homework -
+	Random Walk 
+	random.choice([-1,1])
+	
