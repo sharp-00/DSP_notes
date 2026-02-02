@@ -1,0 +1,35 @@
+The yield keyword in Python
+
+Yield
+generator = a function containing yield
+lazy evalution, produces values without storing them
+Highly effective and much more cheaper
+
+##Comprehensions 
+
+Statement and expression -- check
+
+loop version and Comprehension version 
+Comprehension is more efficient -- examples in slides
+
+list comprehensions -- iterative 
+"--" -- with conditons -- conditions can filter elements
+
+Set and Dictionary comprehensions
+
+Conditional Expressions -- check
+
+zip(): Parallel iteration -- iterate over mutiple sequences together
+				Stops at the shortest sequence
+	Non-idiomatic and idiomatic
+
+Truthiness
+
+any(), all()
+
+using 'with' to open files -- its closes the file automatically, no need to close it
+- example in slides
+
+# venv vs conda
+
+
