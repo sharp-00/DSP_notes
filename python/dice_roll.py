@@ -14,7 +14,7 @@ def roll(n):
 
     return result
 
-dice= roll(500)
+dice= roll(1000)
 
 frequency = Counter(dice)
 
