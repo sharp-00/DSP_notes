@@ -1,0 +1,44 @@
+Numeric Python - numpy
+
+type, inbuilt type
+
+help(list)  --> help(<type>)
+
+doc string??
+
+NumpPy: basics for absolute beginner
+link --> numpy.org/doc/stable/user/absolute_beginners.html
+
+methods and attribute
+
+ndim, size, dtype 
+<namespace>.attribute/method --> eg, a = np.array(<name>)
+					a.ndim
+
+changing type --> g = a.astype("<type>")
+
+## Creating basic arrays
+	np.zeros(n)
+	np.ones(n)
+	np.empty(n) --> creates an array with n values with very small values
+				eg, u = np.empty(5)
+					>>> u
+					array([4.93679774e-310, 0.00000000e+000, 2.14321575e-312, 7.29125107e-302,
+       					2.37151510e-322])
+np.arange(n) -->  0 to n
+np.arange(a,b) --> start, end
+
+np.linspace(a,b,c) --> start,end,inbetween
+
+#INdexing and slicing
+
+len(a)
+a[0],a[5]
+a[3:7]
+a[3:]
+
+When array is of higher dimension 
+b[2,4] --> 2 is the dimension and 4 is the value in that dimension
+can use -1,-4 also
+
+
