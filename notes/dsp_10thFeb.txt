@@ -1,0 +1,65 @@
+##Broadcasting
+
+x,y are arrays
+
+x*y, x+y, x/y, x-y --> only possible if their second dimension?? column?? shape??  matches
+
+##Masks
+
+mask = x >5
+this gives boolean, true or false
+to print the values
+z = x[mask]
+now z will print the values greater than 5 in x
+
+can also print the copliment
+z = x[~mask] --> compliment ###(~)
+
+mask.dtype = bool
+BUT fundamentally its an array so can do operations
+
+eg, --> mask2 = (x > 3) * (x < 10)
+  	now can do mask2 + mask and other operations
+
+can do 
+a[mask] = 333
+this will change the values of 'mask' in 'a' to the given value
+
+to get the indices 
+	np.where 
+	this will you array where mask is true
+	np.where(mask)
+		this will give two arrays, for row and column
+	can also do 
+	np.where(x<5, a, 10*a)
+
+or    np.where(x<5)
+	for k in range(len(i)):
+	print(x[(i[k]),(j[k])])	??? check again
+
+
+###Vectorisation
+
+A loop will do one by one
+>>> total = 0
+>>> for item in x:
+...     if item > 5:
+...             total += item
+... 
+>>> total
+np.int64(30)
+
+here we will use np.sum
+
+total2 = np.sum(x[x>5])
+OR
+x[x>5].sum()
+OR
+np.sum(x[np.where(x>5)])
+
+
+##CSV to array
+
+np.loadtxt()
+OR
+numpy.genfromtxt()
