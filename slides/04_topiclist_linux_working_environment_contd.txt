@@ -1,0 +1,51 @@
+
+
+
+
+
+Topics covered in Lecture 4:
+• System info commands (pt 2)
+- lscpu
+- free
+- uname	-a	(kernel info)
+- lshw	-short (full hardware summary)
+- lsblk (Block devices)
+- top	(current  running processes)
+- ps	-sf	(process snapshot)
+- dmesg	I  less (kernel buffer messages)
+- journalctl	-b (system boot logs)
+- systemctl	list-units	--type=service	--state=r11nning	(run- ning services)
+• Small asides
+- everything is a file
+- one app does one task
+• Manipulating  files
+- touch
+- mv, cp, rm
+• Understanding stdout
+- echo
+- append to file (>>)
+- overwrite to file (>)
+- cat
+
+Topics covered in Lecture 5:
+• bash scripting
+- seq
+- for	loop
+* run through files in a directory
+- execute bash scripts
+• Changing file permissions
+- chmod
+* shebang
+* Python executable with a shebang
+* Bash executable with a shebang
+- chown
+• SSH
+- asymmetric cryptography
+- ssh server
+- ssh client
+- password authentication v/s key-based authentication
+
+
+
+
+1

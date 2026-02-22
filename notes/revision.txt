@@ -1,0 +1,50 @@
+To check system specifications --> inxi -F (detailed hardware info)
+				lscpu -- CPU
+				lsblk -- bloack devices and storage
+				free -h memory usage
+				lspci -- GPU and others
+				dmidecode -- detailed info about hardware
+				uname  -a -- kernel info
+				lshw -short -- for hardware summary 
+				top -- live info about current processes
+				ps -af -- process info (snapshot)
+
+passwd -- to change password
+pwd -- present working directory
+
+touch, cat, less      # File creation/viewing
+
+cat --> to show the content of the file 
+	can be used to combine files too
+		eg, --> cat file1.txt file2.txt > file1+2.txt		--> this will create a new file (use ">>" for append)
+				--> content of file1 and file2 will be made into file1+2 (original files will be unchanged)
+
+du --> size of the file/directory
+	options --> --time, -s ,-h  (-s is for summary and -h is for size in KB, MB, GB) 
+	du -sh <file/directory name>
+
+df --> disk space
+	df -h 
+
+man --> for manual for a command
+
+dmesg --> kernel meesage buffer
+
+journalctl -b  --> system boot logs
+
+systemctl list-units --type=service --state=running   --> current running services
+
+grep --> for searching
+
+printenv
+
+echo --> to print from a file, can use in different ways with other commands
+		$ echo $SHELL
+
+create a .sh file 
+	example is in the bash_eg.sh file
+	give perms --> chmod +x <filename>
+	run it by typing ./<filename>
+
+
+

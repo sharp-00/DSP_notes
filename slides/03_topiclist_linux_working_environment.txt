@@ -1,0 +1,53 @@
+
+
+
+
+
+Topics covered in Lecture 2
+• File hierarchy
+• Meanings of special directories (/etc, /bin, ... )
+• Shell and command line
+• Basic structure of a command line command
+- <command>	<flags>	<args>
+• Navigation with the command line:
+- pwd
+- cd (cd	.. , cd	. , cd  - )
+-	ls	(-1, ., .. )
+- interpreting the output of ls	-1	(owners/ groups, permissions, ... )
+- tab	completion
+- paging commands (less)
+• Piping
+
+Topics covered in Lecture 3:
+• Pattern search
+- grep
+• Working with commands
+- wild card (*)
+- man
+- using --help, --version
+• System info commands (pt 1)
+- printenv
+• Environment variables
+- echo	$ ...
+• Reading/ editing files
+- less,  more
+- cat
+•
+-	VJ.ID
+• Understanding . bashrc
+• Aliases
+- create alias for recently modified files/dirs
+- .bash aliases
+
+
+
+
+
+
+
+
+
+
+
+
+1

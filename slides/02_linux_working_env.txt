@@ -1,0 +1,993 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ubuntu Operating System
+
+
+
+
+
+
+
+
+
+A	COMPLETE	INTRODUCTION
+
+
+
+
+https://linuxcommand.org/tlcl.php
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The	system can be used
+? By multiple users (Multiuser)
+
+
+
+
+
+
+
+
+
+
+
+
+The	system can  be  used
+? By multiple users (Multiuser)
+? For running multiple programs (Multitasking)
+
+
+
+
+
+
+
+
+
+
+
+
+The	system can  be  used
+? By multiple users (Multiuser)
+ ? For running multiple programs (Multitasking) Assuming that you have logged into a Ubuntu System ...
+
+
+
+
+
+
+
+
+
+
+
+
+The	system can  be  used
+? By multiple users (Multiuser)
+? For running multiple programs (Multitasking)
+
+Assuming that you have logged into a Ubuntu System ...
+? You will see desktop similar to Windows
+
+
+
+I
+I	I
+
+
+
+
+bin	boot	dev	etc	home	root	run	sbin	tmp	usr	var
+
+•••
+
+...
+
+
+
+
+
+
+
+
+
+
+
+•
+¦ ¦ • t • e I a,. e •  t • • I • ¦ I I •
+
+........
+
+
+...
+
+
+......
+• •
+
+	I 
+
+
+tmp
+
+
+
+
+.•..
+
+alice	bob
+
+eve
+
+bin	local	sbin
+
+tmp
+
+.•
+I •  t I .......I I
+
+
+
+I
+I	I	I
+
+
+
+
+bin	boot	dev	etc	home	root	run	sbin	tmp	usr	var
+
+•••
+
+...
+
+
+
+
+
+
+
+
+
+
+
+•
+¦ ¦ • t • e I a,. e •  t • • I • ¦ I I •
+
+........
+
+
+...
+
+
+......
+• •
+
+	I 
+
+
+tmp
+
+
+
+
+.•..
+
+alice	bob
+
+eve
+
+bin	local	sbin
+
+tmp
+
+.•
+I •  t I .......I I
+
+
+
+
+
+
+
+
+As a user, you have a HO	E  folder  (eg.  /home/kavita)
+
+
+
+I
+I	I	I
+
+
+
+
+bin	boot	dev	etc	home	root	run	sbin	tmp	usr	var
+
+•••
+
+...
+
+
+
+
+
+
+
+
+
+
+
+•
+¦ ¦ • t • e I a,. e •  t • • I • ¦ I I •
+
+........
+
+
+...
+
+
+......
+• •
+
+	I 
+
+
+tmp
+
+
+
+
+.•..
+
+alice	bob
+
+eve
+
+bin	local	sbin
+
+tmp
+
+.•
+I •  t I .......I I
+
+
+
+
+
+
+
+
+As a user, you have a HO	E folder (eg.  /home/kavita) Open a Terminal  from  the  menu
+
+
+
+I
+I	I	I
+
+
+
+
+bin	boot	dev	etc	home	root	run	sbin	tmp	usr	var
+
+•••
+
+...
+
+
+
+
+
+
+
+
+
+
+
+•
+¦ ¦ • t • e I a,. e •  t • • I • ¦ I I •
+
+........
+
+
+...
+
+
+......
+• •
+
+	I 
+
+
+tmp
+
+
+
+
+.•..
+
+alice	bob
+
+eve
+
+bin	local	sbin
+
+tmp
+
+.•
+I •  t I .......I I
+
+
+
+
+
+
+
+
+As a user, you have a HO	E folder (eg. /home/kavita) Open a Terminal from the  menu
+Change your password -  Two ways -
+(a) GUI
+(b) Terminal - command	passwd
+
+HOME folder and  Present Working Directory
+
+When you start Terminal  you are  in HO	E folder.
+
+HOME folder and  Present Working Directory
+
+When you start Terminal you are in HO	E folder. Check the Present Working Directory
+
+HOME folder and  Present Working Directory
+
+When you start Terminal you are in HO	E folder. Check the Present Working Directory
+
+HOME folder and  Present Working Directory
+
+When you start Terminal you are in HO	E folder. Check the Present Working Directory
+
+
+
+
+
+
+
+
+
+
+
+
+
+Change directory to root
+
+HOME folder and  Present Working Directory
+
+When you start Terminal you are in HO	E folder. Check the Present Working Directory
+
+
+
+
+
+
+
+
+
+
+
+
+
+Change directory to root
+
+
+
+
+Nothing will be displayed.  You can  verify using pwd.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+File Management  with System  Utilities
+
+
+
+
+
+
+
+List files in the  current folder.
+
+
+
+
+
+
+
+List files in the  current folder.
+
+
+
+
+
+
+
+
+
+List files in the  current folder.
+
+
+
+Linux commands can usually take some parameters.
+
+
+
+
+
+
+
+List files in the  current folder.
+
+
+
+Linux commands can usually take some parameters. Option -1 -  show details
+
+
+
+
+
+
+
+Change directory to etc folder:
+
+
+
+
+
+Change directory to etc folder:
+
+
+
+
+
+
+
+Change directory to etc folder:
+
+
+
+List files
+
+
+
+
+
+
+
+Change directory to etc folder:
+
+
+
+List files
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+I
+
+
+bin	boot	dev	etc	home	root	run	sbin	tmp	usr	var
+.....	-·	¦ •
+
+
+
+alice	bob	eve
+
+	 tmp •
+bin	local	sbin	tmp	..-
+
+
+
+
+
+
+
+
+
+I
+
+
+bin	boot	dev	etc	home	root	run	sbin	tmp	usr	var
+
+.....
+
+-·	.. • ¦ •
+
+
+
+
+alice	bob	eve
+
+	 tmp •
+bin	local	sbin	tmp	..-
+
+
+
+
+Relative path to a file or folder
+
+
+
+
+
+
+
+
+
+I
+
+
+bin	boot	dev	etc	home	root	run	sbin	tmp	usr	var
+
+• ¦ ••	.....
+
+-·	.. • ¦ •
+
+...
+
+i	I	I	..
+
+	I	
+	 tmp •
+
+alice	bob	eve	bin	local	sbin	tmp	-··
+
+
+
+Relative path to a file or folder
+
+
+
+
+
+
+
+
+
+
+
+
+I
+
+
+bin	boot	dev	etc	home	root	run	sbin	tmp	usr	var
+
+• ¦ ••	.....
+
+-·	.. • ¦•
+
+I
+...
+
+i	I	I	..
+
+	I 
+	 tmp •
+
+alice	bob	eve	bin	local	sbin	tmp	..	-··
+
+
+
+Relative path to a file or folder
+
+
+
+
+Absolute path
+
+
+
+File Commands  ...
+
+
+
+
+
+
+
+Check your current  folder and  confirm
+
+
+
+
+
+
+
+Check your current folder and  confirm
+
+Other Commands:
+? touch, cat, less	# File creation/viewing
+
+
+
+
+
+
+
+Check your current  folder and  confirm
+
+Other Commands:
+? touch, cat, less	# File creation/viewing
+? cp,	mv, rm	# File management
+
+
+
+
+
+
+
+Check your current  folder and  confirm
+
+Other Commands:
+? touch, cat, less	# File creation/viewing
+? cp,	mv, rm	# File management
+? du	-sh*	# Show directory sizes
+
+
+
+
+
+
+
+Check your current  folder and  confirm
+
+Other  Commands:
+? touch, cat, less	# File creation/viewing
+? cp,	mv, rm	# File management
+
+? du	-sh*
+? df-h
+
+# Show directory sizes
+# Disk space
+
+
+
+
+
+
+
+Check your current  folder and  confirm
+
+Other  Commands:
+? touch, cat, less	# File creation/viewing
+? cp,	mv, rm	# File management
+
+? du	-sh*
+? df-h
+
+# Show directory sizes
+# Disk space
+
+
+
+
+
+
+
+Most commands can take options, eg.  ls	-1
+
+
+
+
+
+
+
+Check your current  folder and  confirm
+
+Other  Commands:
+? touch, cat, less	# File creation/viewing
+? cp,	mv, rm	# File management
+
+? du	-sh*
+? df-h
+
+# Show directory sizes
+# Disk space
+
+
+
+
+
+
+
+Most commands can take options, eg.  ls	-1
+How to find details of a command?  man
+
+
+
+
+CPU Information
+
+
+CPU Information
+
+
+
+
+CPU Information
+
+
+
+
+Get	amount of free and  used memory
+
+
+CPU Information
+
+
+
+
+Get	amount of free and  used memory
+
+
+
+
+
+
+
+
+
+
+
+
+Kernel Info
+
+
+
+
+
+
+
+
+
+Kernel Info
+
+
+
+Full hardware summary
+
+
+
+
+
+
+
+
+
+
+Kernel Info
+
+
+
+Full hardware summary
+
+
+
+
+Block devices
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Getlive informationaboutcurrentprocesses
+$
+..
+top
+
+
+
+
+
+
+
+
+
+
+
+Getlive informationaboutcurrentprocesses
+$
+..
+top
+
+
+
+
+
+
+
+Process Information (Snapshot)
+
+
+
+
+
+
+
+
+
+Kernel buffer messages)
+
+
+
+
+
+
+
+
+
+Kernel buffer messages)
+
+
+
+
+System boot logs
+
+
+
+
+
+
+
+
+
+
+Kernel buffer messages)
+
+
+
+
+System boot logs
+
+
+
+
+
+Currently Running Services
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

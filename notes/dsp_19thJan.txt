@@ -84,5 +84,3 @@ SKIPPED SOME PART
 git branch branchname
 git checkout branchname  --> to switch branches
 
-
-

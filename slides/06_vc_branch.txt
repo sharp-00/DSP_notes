@@ -1,0 +1,849 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Version Control and Collaboration Branching
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? A branch is a pointer to a commit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? A branch is a pointer to a commit
+? HEAD points to the current branch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? A branch is a pointer to a commit
+? HEAD points to the current branch
+? Creating branches is cheap
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? A branch is a pointer to a commit
+? HEAD points to the current branch
+? Creating branches is cheap
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? A branch is a pointer to a commit
+? HEAD points to the current branch
+? Creating branches is cheap
+
+Question What  is the  name of your current  branch?
+
+reating a Branch
+
+
+
+
+Commands
+
+git branch feature git checkout feature
+
+? Work independently
+? No effect  on main
+
+Branch  Isolation
+
+
+Commands
+echo ''Feature work'' >> notes.txt git add notes.txt
+git commit -m "Add feature work"
+
+git checkout main cat notes.txt
+
+Key	Insight:  Branches  isolate  changes
+
+Do some commits in both branches and check log
+git log --graph --oneline --all --decorate
+
+ erging Branches
+
+
+
+Command
+git merge feature
+
+? Fast-forward  merge
+? Pointer  movement,  not file copying
+
+Do some commits in both branches, merge and check log
+git log --graph --oneline  --all --decorate
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Same line changed  in two branches
+? Git cannot guess intent
+
+Resolution  Steps
+? Edit file manually
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Same line changed  in two branches
+? Git cannot guess intent
+
+Resolution  Steps
+? Edit file manually
+? git	add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Same line changed  in two branches
+? Git cannot guess intent
+
+Resolution  Steps
+? Edit file manually
+? git	add
+? git	commit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Local: complete history
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Local: complete history
+? Remote:  shared coordination  point
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Local: complete history
+? Remote:  shared coordination  point
+? origin	default remote
+
+ loning a Repository
+
+
+
+Command
+git clone <repo-url>
+
+? Copies full history
+? Sets up remote tracking
+
+Create a repository on github  gitlab and clone it.
+
+Push and Pull
+
+
+
+
+Commands
+git push git pull
+
+? push: publish local commits
+? pull: fetch+ merge
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Code review
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Code review
+? Discussion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Code review
+? Discussion
+? Continuous Integration
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Code review
+? Discussion
+? Continuous Integration
+? Protect  main  branch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.  Create issue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Create issue
+
+2. Create feature  branch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Create issue
+
+2. Create feature  branch
+
+3. Commit changes
+
+Typical	orkflow
+
+
+
+1. Create issue
+
+2. Create feature  branch
+
+3. Commit changes
+
+4. Push  branch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Create issue
+
+2. Create feature  branch
+
+3. Commit changes
+
+4. Push  branch
+
+5. Open Pull Request
+
+Typical	orkflow
+
+
+
+1. Create issue
+
+2. Create feature  branch
+
+3. Commit changes
+
+4. Push  branch
+
+5. Open Pull Request
+
+6. Review and  merge
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Git is local-first
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Git is local-first
+
+2. Commits are snapshots
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Git is local-first
+
+2. Commits are snapshots
+
+3. Staging enables clean history
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Git is local-first
+
+2. Commits are snapshots
+
+3. Staging enables clean history
+
+4. Branches are cheap
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Git is local-first
+
+2. Commits are snapshots
+
+3. Staging enables clean history
+
+4. Branches are cheap
+
+5. Merges reconcile histories
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Git is local-first
+
+2. Commits are snapshots
+
+3. Staging enables clean history
+
+4. Branches are cheap
+
+5. Merges reconcile histories
+
+6. PRs enable collaboration
+
+_ption 1:  Clone Remote  GitHub  Repository
+? Start from an existing repository hosted on GitHub
+
+_ption 1:  Clone Remote  GitHub  Repository
+? Start from an existing repository hosted on GitHub
+? Create a local working copy by cloning the remote repository
+
+_ption 1:  Clone Remote  GitHub  Repository
+? Start from an existing repository hosted on GitHub
+? Create a local working copy by cloning the remote repository
+Steps:
+1. Clone the  repository:
+git clone https://github.com/user/project.git
+2. Make changes locally and  commit:
+git add.
+git commit -m "Your message"
+3. Push changes to GitHub:
+git push origin main
+4. Pull updates from GitHub	when needed :
+git pull origin main
+
+ption 2: Set	Remote in Existing Local Repository
+
+? Start from an already existing local Git repository
+
+ption 2: Set	Remote in Existing Local Repository
+
+? Start from an already existing local Git repository
+? Later connect it to a remote GitHub repository
+
+ption 2: Set	Remote in Existing Local Repository
+
+? Start from an already existing local Git repository
+? Later connect it to a remote GitHub repository
+Steps:
+1. Initialize repository locally	if not already done :
+git init
+
+2. Add GitHub repository as a remote:
+git remote add origin https://github.com/user/project.git
+
+3. Push local history to GitHub:
+git push -u origin main
+
+Note:  GitHub repository should  be empty  (no README or commits).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

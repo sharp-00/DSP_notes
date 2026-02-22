@@ -1,0 +1,1035 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Version Control and Collaboration Basics
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Files named:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Files named:
+? final. c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Files named:
+? final. c
+? f  inal_v2. c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Files named:
+? final. c
+? f  inal_v2. c
+? final_really_final. c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Files named:
+? final. c
+? f  inal_v2. c
+? final_really_final. c
+? No clear history
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Files named:
+? final. c
+? f  inal_v2. c
+? final_really_final. c
+? No clear history
+? Difficult collaboration
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Files named:
+? final. c
+? f  inal_v2. c
+? final_really_final. c
+? No clear history
+? Difficult collaboration
+? Easy to lose work
+
+Local Version ontrol System
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Version DatabaseVersion 3
+
+
+Version 2
+
+
+Version 1
+
+
+
+
+
+RCS - Idea:  Keep patch sets that can used to recreate a file
+
+	necK1ns  uver	11111e		?
+
+File	A	;	?
+
+
+
+File  B	/11
+
+File  c	1	?	?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Single central server
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Single central server
+? Clients checkout  working copies
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Single central server
+? Clients checkout  working copies
+? Commit  requires  network  access
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Single central server
+? Clients checkout  working copies
+? Commit  requires  network  access
+? Branching  is expensive
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Single central server
+? Clients checkout  working copies
+? Commit  requires  network  access
+? Branching  is expensive
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Single central server
+? Clients checkout  working copies
+? Commit  requires  network  access
+? Branching  is expensive
+
+Key	Limitation:  Single  point  of  failure
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Distributed version control
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Computer A
+File
+
+
+Version Database Version 3
+Version 2
+
+Version 1Computer B
+File
+
+Version Database Version 3
+I
+Version 2
+I
+Version 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Distributed version control
+? Every clone has full history
+
+
+
+
+
+
+
+Computer A
+File
+
+
+Version Database Version 3
+Version 2
+
+Version 1Computer B
+File
+
+Version Database Version 3
+I
+Version 2
+I
+Version 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Distributed version control
+? Every clone has full history
+? Fast, local commits
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Distributed version control
+? Every clone has full history
+? Fast, local commits
+? Cheap branching and mergi• ng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Distributed version control
+? Every clone has full history
+? Fast, local commits
+? Cheap branching and mergi• ng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+? Distributed version control
+? Every clone has full history
+? Fast, local commits
+? Cheap branching and mergi• ng
+
+
+
+
+Key	Idea:  Collaboration  without  central  dependency
+
+
+
+
+
+
+
+Checkins Ov r Time	?
+
+
+
+
+
+
+
+
+F·le A	A1	   A1	I	A2	    A2
+
+
+
+ile B
+_)_
+
+      B	B	,
+	
+
+I	Bl	B2
+
+
+
+
+
+F·le C
+
+Cl	C2	i	C2	,	C3
+
+
+
+
+
+
+
+? Git  stores  snapshots,  not  cliffs
+
+
+
+
+
+
+
+Checkins Ov r Time	?
+
+
+
+
+
+
+
+
+F·le A	A1	   A1	I	A2	    A2
+
+
+
+ile B
+_)_
+F·le C
+
+      B	B	,
+	
+Cl	C2
+
+I	Bl	B2
+
+• C2	,	C3
+
+
+
+
+
+
+
+? Git  stores  snapshots,  not  cliffs
+? Each commit points to:
+
+
+
+
+
+
+
+Checkins Ov r Time	?
+
+
+
+
+
+
+
+
+F·le A	A1	   A1	I	A2	    A2
+
+
+
+ile B
+_)_
+F·le C
+
+      B	B	,
+	
+Cl	C2
+
+I	Bl	B2
+
+• C2	,	C3
+
+
+
+
+
+
+
+? Git  stores  snapshots,  not  cliffs
+? Each commit points to:
+? A snapshot  of files
+
+
+
+
+
+
+
+Checkins Ov r Time	?
+
+
+
+
+
+
+
+
+F·le A	A1	   A1	•	A2	    A2
+
+
+
+ile B	     B
+_)_	
+F·le C	Cl
+
+B	,	I	Bl	B2
+		
+C2	•	C2	,	C3
+
+
+
+
+
+
+
+? Git  stores  snapshots,  not  cliffs
+? Each commit points to:
+? A snapshot  of files
+? Parent commit(s)
+
+
+
+
+
+
+
+
+
+
+
+
+
+F·le A
+
+Checkins Ov r Time	?
+
+A1	    A1	•	A2	    A2
+
+
+				
+
+
+ile B
+_)_
+F·le C
+
+B	I	B	,	I
+	
+Cl	C2
+
+Bl	B2
+
+• C2	,	C3
+
+
+
+
+
+
+
+? Git  stores  snapshots,  not  cliffs
+? Each commit points to:
+? A snapshot  of files
+? Parent commit(s)
+? History forms a DAG	Directed Acyclic Graph
+
+
+
+
+
+
+
+
+
+
+
+
+
+F·le A
+
+Checkins Ov r Time	?
+
+A1	    A1	•	A2	    A2
+
+
+				
+
+
+ile B
+_)_
+F·le C
+
+B	I	B	,	I
+	
+Cl	C2
+
+Bl	B2
+
+• C2	,	C3
+
+
+
+
+
+
+
+? Git  stores  snapshots,  not  cliffs
+? Each commit points to:
+? A snapshot  of files
+? Parent commit(s)
+? History forms a DAG	Directed Acyclic Graph 
+? Nearly  all operations  are local
+
+Git	Configuration  and  Initializing a Repository
+
+Commands
+git config --global user.name "Kalpesh Kapoor"
+git config --global user.email kalpesh.kapoor@iiserpune.ac.in mkdir dspractice
+cd dspractice
+git init
+? 	git global configuration in home directory-	/. gitconfig [user]
+email= kalpesh.kapoor(c)iiserpune.ac.in
+name = Kalpesh
+•	•	•
+
+? Creates a . git directory
+? Working directory vs Repository
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+? Modified
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+? Modified
+? Staged
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+? Modified
+? Staged
+? Committed
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+? Modified
+? Staged
+? Committed
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+? Modified
+? Staged
+? Committed
+
+Staging Area deliberate commit preparation
+
+First  Con1n1it
+
+
+Commands
+echo ''Version 1'' > notes.txt git status
+git add notes.txt
+git commit -m "Initial commit"
+
+? Commit	snapshot
+? Commit message explains intent
+? Git maintains integrity using hashes
+
+ odified but  Unstaged
+
+
+
+Commands
+
+
+
+
+echo''Version2''>>  notes. txtgit
+gitstatus
+diff
+
+
+After add: git	dif f	--staged
+
+
+Question:
+Why does Git not automatically commit this change?
+
+Partial Staging, Ignoring and  Removing Files,  Logs
+
+Commands
+git	add	-p
+
+? Stage changes interactively
+? Build logical commits
+
+Ignore files: Specify patterns in . gi tignore Remove files: git		rm		[ --cached]	file Moving files: git	mv	old	new
+Explore: git	log,  git	log  -p
+
+
+
+
+
+
+
+11
+
+Undoing
+
+
+
+Commands
+
+
+
+
+gitcommit -m 'Initialcommit'gitadd forgotten_filegitcommit --amend
+
+
+
+
+git restore --staged file	# for unstaging git restore file	# to discard changes
+
+Access  Previous  Versions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gitcheckout<commit-hash>gitcheckout<tag>
+
+
+
+
+git restore --source=HEAD-1 file.txt
+
+
+
+
+
+
+gitshow<commit-hash>:</path/to/file>gitshowHEAD-1:</path/to/file>git diff <commit-hash> <commit-hash> -- /path/to/file
+
+
+A new command git switch is recommended  in  place of checkout.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
