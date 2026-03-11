@@ -70,4 +70,38 @@ Raising Exceptions:
         - AVOID RAINBOW COLORMAP
     - if line plots are not justified (i.e. underlying data is not continuous)
         - eg. temperature - continuous, can use line plots
-    
+
+**10-03-26**
+
+## Matplotlib
+    - figure
+    - plots
+    - axes
+        - relative plot positions in figure
+        - left margin, right margin, width, height eg. --> ax_cmp = fig.add_axes([0.3, 0.35, 0.5, 0.5])
+    - twin axes
+
+
+# rainfall
+    - 8X8 plot 
+        - heatmap in the middle, right to it, the average rainfall, colorbar on left, and at the bottom --
+    - pcolormesh
+    -         
+
+**11-03-26**
+
+## Visual Hierarchy
+
+    - various factors guide the viewers eye 
+            -size, location, color
+                    -eg.--> tree in a FOREST and TREE in a forest 
+
+# VH in matplotlib 
+    - some parameters: 
+        - linestyle(ls), linewidth(lw)
+        - opacity(alpha)
+        - different colors (in accordance with Gestalt principles) eg.--> red(important), grey(not important)
+        - zorder (layers--> above and below, similar to layers in photoshop?)
+        - Location (top-left and center)
+        - 
+        - 
