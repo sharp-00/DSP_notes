@@ -103,5 +103,61 @@ Raising Exceptions:
         - different colors (in accordance with Gestalt principles) eg.--> red(important), grey(not important)
         - zorder (layers--> above and below, similar to layers in photoshop?)
         - Location (top-left and center)
-        - 
-        - 
+ 
+
+## **24-3-26**
+
+## Performance Evaluation and Improvement - Computational Complexity
+
+# Computational Problem
+        Input --> Information provided to the problem solver.
+        Output --> The solution that satisfies to the problem's requirements.
+    Output is the solution to the problem, it is what the problem solver needs to do to solve the problem.
+
+# Data Structure
+    A systematic way of --
+    organising(access), managing, storing data
+
+# Algorithm
+    A finite sequence of computational steps that takes an input and produces output in execution of steps in finite time.
+
+    Main Characterstics
+    - Finite sequence of steps
+    - Unambiguous comoputational steps
+    - Execution stops after finite time in desired output
+
+    # **Aspects of Algorithm**
+        - Design
+        - Correctness (Verification) --> as long as input is correct, the algorithm should always give correct answer
+        - Efficiency (**This is what we will be doing**)
+            - Time (Operations, I/O - Multiple levels) --> time spend on operation, fetching data from machine/disk/cloud (I/O)
+                        time takes to fetch --> machine<disk<<cloud
+        - Communication (size and number of messages, Initial delay
+        - Space complexity
+        
+    Algorithm efficiency challenges
+        - Input space is very large in most cases, while testing we use finite sized samples from the space
+        - Computer speeds have been changing (different computers with different speeds)
+        - Variation in programming language and even Operating System
+        - Variation in transaltion from high level language to machine language
+        - resource sharing on a computer may affect execution time (many processes(application) running at the same time)
+
+    How do we solve these?
+        - Fix model of computation --???
+        - Fix basic set of instructions
+        - Complexity (efficiency) as a function of the size of input
+                    f(n) number of basic steps for input size = n
+
+
+
+
+
+        if for loop takes n times
+        then while loop will take n + 1 times
+        for  i = 0 to n-1
+                --> n times
+        while i <= n-1
+                --> n+1 times (it will fail at the last one)
+
+
+ 
