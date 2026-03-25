@@ -150,7 +150,7 @@ Raising Exceptions:
 
 
 
-
+    Find minimum  value, (have to look, not enough in slides)
 
         if for loop takes n times
         then while loop will take n + 1 times
@@ -160,4 +160,73 @@ Raising Exceptions:
                 --> n+1 times (it will fail at the last one)
 
 
+
+**25-03-26**
+
+Time Complexiity: A * n + B  where n=j-i+1
+    Idea -->  Consider leading term, ignore constants
+    Is it okay to use only the leading term?
+    Suppose we have two algorithm
+    Algorithm A  Time complexity-> n * logn
+    Algotirtm B  Time complexity --> n^2  
+
+    c(nlogn)   and   c`(n^2)
+
+    now give benefit to algo B
+    big constant for algo A and small for algoB
+    c = 100 and c`=1
+
+It is not always true that one algorithm is better than the other, we can always find a value n_0 where the other algorithm is better
+
+## Asymptotic Complexity
+        Upper Bound (O) - Big-O
+            -> f(n)=O(g(n))    --->    0<=f(n)<=c* g(n)
+    O is the set       
+    here = does not mean equals to, it means f(n) is a member of O(g(n))
+            eg,--> 20n = O(n^2)
+            This is for algorithm, need no more effort than O(maximum)
+        Lower Bound - big omega
+            --> This is for problem, not for algorithm, minimum effort required to solve the problem        
+
+        Tight Bound(theta(0))
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
+
+
+
+
+
+
+
+
