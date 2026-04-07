@@ -196,22 +196,31 @@ It is not always true that one algorithm is better than the other, we can always
 
 
 
+**30-03-26**
+
+    Bashscripts
+        ls -lt for recently modified file and ls -lt | head -n 2 to print only that         
+        head can print the top 10 lines, can change the NUM using head -5    
+    - ls | wc -l  to print the number of files in a directory
+    - ls -l | tail +2 | wc -l
+    
+    - how many unique customers in online-retail.csv
+        - how many lines? --> wc -l <filename> or cat <filename> | wc -l
+
+    - cut -d ',' -f8 <filename> |tail -n +2 | sort | uniq -u | wc -l
+
+    - cut -d ',' -f1 <filename> |tail -n +2 | sort |uniq| wc -l
+
+    - cat filename | grep -c 'whatever you want to search' (-c is for count)
+
+    - to append >>
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+**NEED NOTES**
 
 
 
@@ -227,6 +236,20 @@ It is not always true that one algorithm is better than the other, we can always
 
 
 
+**07-04-2026**
+
+### Performance Analysis
+
+  #  basic timing
+        
+        - ex_time.py
+
+        - ex_profile.py
+                - run --> the columns by the library cProfile --> ncalls, tottime, percall, cumtime(-_~), percall(for cumtime), filename
 
 
+ ## Sorting Algorithms
+    
+  # Quick Sort
 
+    - 
